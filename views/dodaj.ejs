@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/10251/10251277.png">
+    <link rel="stylesheet" type="text/css" href="dodaj.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj nieruchomość</title>
+</head>
+<style>
+    #current_page
+    {
+        border-bottom: solid  #2a623d 3px;
+        border-bottom-left-radius:0px;
+        border-bottom-right-radius:0px;
+    }
+
+    #current_page:hover
+    {
+        border-radius: 10px;
+    }
+
+    </style>
+
+
+<body>
+    <div class="naglowek">
+
+        <a href='/'><img src="https://meerhouse.pl/wp-content/uploads/files/logo.jpg" id="logo"></a>
+       
+        <% for(var i=0; i<b.length; i++)
+        { %>
+
+        <% } %>  
+
+        <div class="kontrolki">
+     
+            <a href="/"><div class="odnosnik">                                       Strona główna</div></a> <hr id="pion">
+            <a href='/dodaj'><div class="odnosnik" id="current_page">                Dodaj nieruchomość</div></a><hr id="pion">
+            <a href='/aktualizacja'> <div class="odnosnik">                          Aktualizacja danych  </div></a><hr id="pion">
+            <a href='/usuwanie'><div class="odnosnik">                               Usuń nieruchomość  </div></a><hr id="pion">
+            <a href='/ulubione'><div class="odnosnik">                               Ulubione <b><%= i %></b></div></a>
+        </div>
+         </div>
+
+    
+         <div class="tlo">
+            <div class="dodaj_nieruchomosc">
+                
+                <form action="/dodawanie">
+
+                    <table id="tabela">
+                        <tr><h1><b>Dodaj nieruchomość</b></h1></tr>
+                        <tr>
+                            <td><input type="number" name="id"           class="ID"           placeholder="ID..."></td>
+                            <td><input type="number" name="cena"         class="CENA"         placeholder="CENA..."></td>
+                            <td><input type="number" name="powierzchnia" class="POWIERZCHNIA" placeholder="POWIERZCHNIA..."></td>
+                        </tr>
+                       
+                        <tr>
+                            <td><input type="number" name="pietro"          class="PIETRO"           placeholder="PIĘTRO..."></td>
+                            <td>
+                                <select class="MIESZKANIE" name="rodzaj_budynku">
+                                    <option disabled selected hidden>Mieszkanie</option>
+                                    <option>Mieszkanie</option>
+                                    <option>Dom</option>
+                                </select>
+                            </td>
+                            <td><input type="text"   name="miasto"   class="MIASTO"   placeholder="MIASTO..."></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <select class="TYP" name="typ">
+                                    <option disabled selected hidden>Sprzedaż...</option>
+                                    <option>Sprzedaż</option>
+                                    <option>Wynajem</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="ulica" class="ULICA"   placeholder="ULICA..."></td>
+                            <td><input type="text" name="zdjecie" class="ZDJECIE"   placeholder="ADRES ZDJĘCIA..."></td>
+            
+                        </table>
+                        <input type="submit" class="SUBMIT" value="Dodaj nieruchomość">
+                </form>
+            </div>
+            </div>
+    
+
+         <div class="glowny">
+
+         </div>
+</body>
+</html>

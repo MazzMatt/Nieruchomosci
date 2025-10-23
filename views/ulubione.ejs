@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/10251/10251277.png">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uluubione oferty</title>
+
+</head>
+
+<style>
+    #current_page
+    {
+        border-bottom: solid  #2a623d 3px;
+        border-bottom-left-radius:0px;
+        border-bottom-right-radius:0px;
+    }
+
+    #current_page:hover
+    {
+        border-radius: 10px;
+    }
+
+</style>
+
+<script type="text/javascript">
+
+function cykl() {
+   setTimeout(odswiez, 1000);
+ }
+
+function odswiez()
+{
+    location.reload();
+}
+
+</script>
+
+<body>
+    <div class="naglowek">
+
+        <a href='/'><img src="https://meerhouse.pl/wp-content/uploads/files/logo.jpg" id="logo"></a>
+       
+
+        <% for(var i=0; i<a.length; i++)
+        { %>
+
+        <% } %>   
+
+
+        <div class="kontrolki">
+     
+         <a href="/"><div class="odnosnik" >                                      Strona główna</div></a> <hr id="pion">
+         <a href='/dodaj'><div class="odnosnik">                                  Dodaj nieruchomość</div></a><hr id="pion">
+         <a href='/aktualizacja'> <div class="odnosnik">                          Aktualizacja danych  </div></a><hr id="pion">
+         <a href='/usuwanie'><div class="odnosnik">                               Usuń nieruchomość  </div></a><hr id="pion">
+         <a href='/ulubione'><div class="odnosnik" id="current_page">             Ulubione: <b><%= i %></b>  </div></a>
+        </div>
+         </div>
+
+    
+         <div class="tlo">
+            <div class="filtrowanie">
+                
+                <form action="/ulubione">
+                    <table>
+                        <tr><h1><b>Ulubione oferty</b> <img src="https://cdn-icons-png.flaticon.com/512/3756/3756555.png" width="30px" height="30px"></h1></tr>
+                        <tr>
+                        <td>    
+                            <div class="mieszkanie">
+                                <select id="mieszkanie" name="mieszkanie">
+                                    <option disabled selected hidden>...</option>
+                                    <option>Mieszkanie</option>
+                                    <option>Dom</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="wynajem">
+                                <select name="wynajem">
+                                    <option disabled selected hidden>...</option>
+                                    <option>Sprzedaż</option>
+                                    <option>Wynajem</option>
+                                    </select>
+                            </div>
+                
+                        </td>
+                         <td>
+                            <div class="miejscowosc">
+                                <input type="text" placeholder="Miejscowość lub miasto..." name="miejscowosc" id="miejscowosc" >
+                            </div>
+                
+                        </td>
+                        <td><input type="submit" class="wyszukaj" value="Wyszukaj"></td></tr>
+                        
+                    </table>
+                </form>
+
+            </div>
+            </div>
+    
+
+         <div class="glowny">
+
+                <% for(let i=0; i<a.length; i++)
+                { %>
+    
+                <div class="oferta">
+                    <div class="lewy">
+                        <img src="<%=  a[i].zdjecie  %>" class="foto_oferty">
+                    </div>
+        
+                    <div class="prawy">
+                        
+                        <div class="cena"><b><%=  a[i].cena  %> zł</b><br><br>
+
+                            <form action="/ulubione">
+                                <input type="hidden" name="icon_src" value="<%= a[i].icon %>">
+                                <input type="hidden" name="adres_zdjecia" value="<%= a[i].zdjecie %>">
+                                <input type="hidden" name="id" value="<%= a[i].id %>">
+                                <input type="hidden" name="cena" value="<%= a[i].cena %>">
+                                <input type="hidden" name="powierzchnia" value="<%= a[i].powierzchnia %>">
+                                <input type="hidden" name="rodzaj_budynku" value="<%= a[i].rodzaj_budynku %>">
+                                <input type="hidden" name="pietro" value="<%= a[i].pietro %>">
+                                <input type="hidden" name="typ" value="<%= a[i].typ %>">
+                                <input type="hidden" name="miasto" value="<%= a[i].miasto%>">
+                                <input type="hidden" name="ulica" value="<%= a[i].ulica%>">
+                               
+                                <button type="submit" onmousemove="cykl()" onmouseout="cykl()" class="submit"><img id="icon" src="<%= a[i].icon %>"></button>
+                            </form>
+                        </div>
+                        <div class="napis"><%= a[i].rodzaj_budynku %> na <%= a[i].typ %></div><br><br><br><br>
+                        <div class="miasto"><b><%=  a[i].miasto  %></b></div><br><br><br>
+                        <div class="ulica"><b>ul. <%=  a[i].ulica  %></b></div><br><br>
+                        <div class="parametry"><%=  a[i].powierzchnia  %> m <sup>2</sup> · <%=  a[i].pietro  %> piętro </div>
+        
+                    </div>
+                </div>
+                <% } %>
+            
+           
+         </div>
+         
+   
+</body>
+</html>

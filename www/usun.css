@@ -1,0 +1,69 @@
+.filtrowanie
+{
+    background-color: white;
+    padding: 10px;
+    padding-left:30px;
+    width:70%;
+    height:90px;
+    margin: auto;
+    box-shadow: 5px 5px 15px;
+    border-radius: 5px;
+}
+
+.main_tr
+{
+    font-weight: bold;
+}
+
+.ID,.CENA,.POWIERZCHNIA,.PIETRO,.MIASTO,.ULICA,.ZDJECIE,.ADRES_ZDJECIA
+{
+    width:70px;
+    height:20px;
+    background-color: #F0F0F0;
+    border:solid grey 1px;
+    padding: 5px;
+    position: relative;
+    font-family: Arial;
+}
+
+.RODZAJ_BUDYNKU,.TYP
+{
+    width:70px;
+    height:30px;
+    background-color: #F0F0F0;
+    border:solid grey 1px;
+    padding: 5px;
+    position: relative;
+    font-family: Arial;
+}
+
+.SUBMIT
+{
+    width:100%;
+    height:100%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+table
+{
+    width:70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+    border:solid black 1px;
+}
+
+tr,td
+{
+    height:30px;
+    width:70px;
+    border:solid black 1px;
+}
+
+img
+{
+    width: 200px;
+    height:110px;
+}

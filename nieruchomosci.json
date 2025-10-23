@@ -1,0 +1,141 @@
+[{
+  "_id": {
+    "$oid": "642f65f175c1b3b069d38816"
+  },
+  "cena": 450900,
+  "powierzchnia": 140,
+  "pietro": 2,
+  "rodzaj_budynku": "Mieszkanie",
+  "zdjecie": "https://www.kreatywna.pl/wp-content/uploads/bez-kategorii/jpg/aurory_7-1024x525.jpg",
+  "miasto": "Radom",
+  "ulica": "Jana Pawła",
+  "typ": "Sprzedaż",
+  "id": 2,
+  "icon": "https://cdn-icons-png.flaticon.com/512/3395/3395509.png"
+},{
+  "_id": {
+    "$oid": "642f663375c1b3b069d38817"
+  },
+  "cena": 348000,
+  "powierzchnia": 78,
+  "pietro": 4,
+  "rodzaj_budynku": "Mieszkanie",
+  "zdjecie": "https://www.kreatywna.pl/wp-content/uploads/bez-kategorii/jpg/aurory_7-1024x525.jpg",
+  "miasto": "Chełm",
+  "ulica": "Szymanowskiego",
+  "typ": "Sprzedaż",
+  "id": 2,
+  "icon": "https://cdn-icons-png.flaticon.com/512/3756/3756555.png"
+},{
+  "_id": {
+    "$oid": "642f666875c1b3b069d38818"
+  },
+  "cena": 4600,
+  "powierzchnia": 189,
+  "pietro": 1,
+  "rodzaj_budynku": "Dom",
+  "zdjecie": "https://www.kreatywna.pl/wp-content/uploads/bez-kategorii/jpg/aurory_7-1024x525.jpg",
+  "miasto": "Janów",
+  "ulica": "Prosta",
+  "typ": "Wynajem",
+  "id": 5,
+  "icon": "https://cdn-icons-png.flaticon.com/512/3395/3395509.png"
+},{
+  "_id": {
+    "$oid": "643001f43484897ccce3c579"
+  },
+  "cena": 234234,
+  "powierzchnia": 123,
+  "pietro": 3,
+  "rodzaj_budynku": "Dom",
+  "zdjecie": "https://img.freepik.com/darmowe-zdjecie/dom-na-bialym-tle-w-tej-dziedzinie_1303-23773.jpg",
+  "miasto": "Gdynia",
+  "ulica": "Bałtycka",
+  "typ": "Sprzedaż",
+  "id": 3,
+  "icon": "https://cdn-icons-png.flaticon.com/512/3395/3395509.png"
+},{
+  "_id": {
+    "$oid": "64300271edc5f863a719d7d6"
+  },
+  "cena": 2400,
+  "powierzchnia": 142,
+  "pietro": 1,
+  "rodzaj_budynku": "Dom",
+  "zdjecie": "https://img.freepik.com/darmowe-zdjecie/dom-na-bialym-tle-w-tej-dziedzinie_1303-23773.jpg",
+  "miasto": "Gdynia",
+  "ulica": "Bałtycka",
+  "typ": "Wynajem",
+  "id": 2,
+  "icon": "https://cdn-icons-png.flaticon.com/512/3756/3756555.png"
+},{
+  "_id": {
+    "$oid": "643005f63b172565013a4576"
+  },
+  "cena": 120900,
+  "powierzchnia": 221,
+  "pietro": 2,
+  "rodzaj_budynku": "Dom",
+  "zdjecie": "https://i.wpimg.pl/x800/wpcdn.pl/extradom/designs/70660/559659/c24a19454af656bae4984c37380087c9ae4e5535ddb053a0d275cdffc4abd508.jpg",
+  "miasto": "Sosnowiec",
+  "ulica": "Komunalna",
+  "typ": "Sprzedaż",
+  "id": 2,
+  "icon": "https://cdn-icons-png.flaticon.com/512/3395/3395509.png"
+},{
+  "_id": {
+    "$oid": "643008aa828a9f18b9e74686"
+  },
+  "cena": 2300,
+  "powierzchnia": 78,
+  "pietro": 1,
+  "rodzaj_budynku": "Dom",
+  "zdjecie": "https://images.squarespace-cdn.com/content/v1/5225a724e4b0329755b79aa6/1422219352380-VKRPX3AJ104HU0YU8SRT/HomeKoncept_1_-_front.jpg",
+  "miasto": "Toruń",
+  "ulica": "Dziwna",
+  "typ": "Wynajem",
+  "id": 3,
+  "icon": "https://cdn-icons-png.flaticon.com/512/3395/3395509.png"
+},{
+  "_id": {
+    "$oid": "6430279f76fb559a2a2617cc"
+  },
+  "cena": 500000,
+  "powierzchnia": 130,
+  "pietro": 1,
+  "rodzaj_budynku": "Dom",
+  "zdjecie": "https://dompasja.pl/pub/media/wysiwyg/Madera-slider_12.jpg",
+  "miasto": "okszów",
+  "ulica": "okszowska",
+  "typ": "Sprzedaż",
+  "id": 3,
+  "icon": "https://cdn-icons-png.flaticon.com/512/3395/3395509.png"
+},{
+  "_id": {
+    "$oid": "643080023ddd0a3e9dc43074"
+  },
+  "cena": 4500,
+  "powierzchnia": 125,
+  "pietro": 1,
+  "rodzaj_budynku": "Dom",
+  "zdjecie": "https://nowoczesnastodola.pl/wp-content/uploads/2022/08/nowoczesna-STODOLA-Archetyppl-projekty-domow-Projekt-HANA-3-3.jpg.webp",
+  "miasto": "Poznań",
+  "ulica": "Niebieska",
+  "typ": "Wynajem",
+  "id": 2,
+  "icon": "https://cdn-icons-png.flaticon.com/512/3395/3395509.png"
+},{
+  "_id": {
+    "$oid": "643174305441c77fbff9bac3"
+  },
+  "cena": 333222,
+  "powierzchnia": 123,
+  "pietro": 2,
+  "rodzaj_budynku": "Mieszkanie",
+  "zdjecie": "https://d-art.ppstatic.pl/kadry/k/r/1/ae/51/594a2916a6cb6_o_medium.jpg",
+  "miasto": "Bydgoszcz",
+  "ulica": "Patologiczna",
+  "typ": "Sprzedaż",
+  "id": 1,
+  "icon": "https://cdn-icons-png.flaticon.com/512/3395/3395509.png"
+}]

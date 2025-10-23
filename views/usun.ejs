@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/10251/10251277.png">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="usun.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuwanie nieruchomości</title>
+
+</head>
+<style>
+    #current_page
+    {
+        border-bottom: solid  #2a623d 3px;
+        border-bottom-left-radius:0px;
+        border-bottom-right-radius:0px;
+    }
+
+    #current_page:hover
+    {
+        border-radius: 10px;
+    }
+
+</style>
+
+<script>
+
+</script>
+<body>
+    <div class="naglowek">
+
+        <a href='/'><img src="https://meerhouse.pl/wp-content/uploads/files/logo.jpg" id="logo"></a>
+       
+        <% for(var i=0; i<b.length; i++)
+        { %>
+
+        <% } %>  
+
+        <div class="kontrolki">
+     
+         <a href="/"><div class="odnosnik">                                  Strona główna</div></a> <hr id="pion">
+         <a href='/dodaj'><div class="odnosnik">                             Dodaj nieruchomość</div></a><hr id="pion">
+         <a href='/aktualizacja'> <div class="odnosnik">                     Aktualizacja danych  </div></a><hr id="pion">
+         <a href='/usuwanie'><div class="odnosnik" id="current_page">        Usuń nieruchomość  </div></a><hr id="pion">
+         <a href='/ulubione'><div class="odnosnik">                          Ulubione <b><%= i %></b></div></a>
+        </div>
+         </div>
+
+    
+         <div class="tlo">
+            <div class="filtrowanie">
+                        <h1><b>Usuń nieruchomość</b></h1>
+            </div>
+            </div>
+    
+
+         <div class="glowny">
+            
+                <% for(let i=0; i<a.length; i++)
+                { %>
+                <form action="/usun">
+                <table>
+                    <tr class="main_tr">
+                        <td rowspan="2"><img src="<%=  a[i].zdjecie  %>" class="FOTO_OFERTY"></td>
+                        <td>Id</td>
+                        <td>Cena</td>
+                        <td>Powierzchnia</td>
+                        <td>Rodzaj budynku</td>
+                        <td>Piętro</td>
+                        <td>Typ</td>
+                        <td>Miasto</td>
+                        <td>Ulica</td>
+                        <td>Zatwierdz</td>
+                     </tr>  
+                     <tr> 
+                        <td><%=  a[i].id  %></td>
+                        <td><%=  a[i].cena  %></td>
+                        <td><%=  a[i].powierzchnia  %></td>
+                        <td><%=  a[i].rodzaj_budynku %></td>
+                        <td><%=  a[i].pietro  %></td>
+                        <td><%=  a[i].typ %></td>
+                        <td><%=  a[i].miasto  %></td>
+                        <td><%=  a[i].ulica  %></td>
+                        <td><input type="submit" class="SUBMIT" value="Usuń"></td>
+                    </tr>
+                    </table>
+
+                    <input type="hidden" name="_adres_zdjecia" value="<%= a[i].zdjecie %>">
+                    <input type="hidden" name="_id" value="<%= a[i].id %>">
+                    <input type="hidden" name="_cena" value="<%= a[i].cena %>">
+                    <input type="hidden" name="_powierzchnia" value="<%= a[i].powierzchnia %>">
+                    <input type="hidden" name="_rodzaj_budynku" value="<%= a[i].rodzaj_budynku %>">
+                    <input type="hidden" name="_pietro" value="<%= a[i].pietro %>">
+                    <input type="hidden" name="_typ" value="<%= a[i].typ %>">
+                    <input type="hidden" name="_miasto" value="<%= a[i].miasto%>">
+                    <input type="hidden" name="_ulica" value="<%= a[i].ulica %>">
+                    </form>
+            
+                <% } %> 
+         </div>
+         
+   
+</body>
+</html>

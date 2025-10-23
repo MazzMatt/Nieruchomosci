@@ -1,0 +1,78 @@
+.dodaj_nieruchomosc
+  {
+    background-color: white;
+    padding: 10px;
+    padding-left:30px;
+    width:70%;
+    height:300px;
+    margin: auto;
+    box-shadow: 5px 5px 15px;
+    border-radius: 5px; 
+  }
+
+
+#tabela
+{
+    width: 600px;
+    height: 170px;
+}
+
+td
+{
+    border:solid black 1px;
+    text-align: center;
+}   
+
+.ID,.CENA,.POWIERZCHNIA,.PIETRO,.MIASTO,.ULICA,.ZDJECIE
+{
+    width:120px;
+    height:20px;
+    background-color: #F0F0F0;
+    border:solid grey 1px;
+    box-shadow:  1px 1px 5px;
+    padding: 5px;
+    position: relative;
+    font-family: Arial;
+}
+
+.MIESZKANIE,.TYP
+{
+    width:130px;
+    height:30px;
+    background-color: #F0F0F0;
+    border:solid grey 1px;
+    box-shadow:  1px 1px 5px;
+    padding: 5px;
+    position: relative;
+    font-family: Arial;
+}
+
+.ID:hover,.CENA:hover,.POWIERZCHNIA:hover,.PIETRO:hover,.MIASTO:hover,.ULICA:hover,.ZDJECIE:hover,.MIESZKANIE:hover,.TYP:hover
+{
+    background-color: white;
+}
+
+.SUBMIT
+{
+    margin-left:400px;
+    margin-top:20px;
+    width:200px;
+    height:30px;
+    position: relative;
+    font-family: Arial;
+    font-size: 100%;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px;
+}
+
+.SUBMIT:hover
+{
+    background-color: white;
+    color: black;
+    border:solid black 4px;
+    font-style: bold;
+}

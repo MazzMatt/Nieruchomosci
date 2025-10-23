@@ -1,0 +1,274 @@
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  scroll-behavior: smooth;
+  background-color: #f7f7f7;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  width: 100%;
+  margin: 0; 
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.naglowek
+  {
+    background-color: white;
+    height:110px;
+    width:100%;
+    padding: 2px;
+    position: sticky;
+    margin-top: 0px;
+    top: 0;
+    z-index: 10;
+    box-shadow:5px 5px 15px;
+  }
+
+  .tlo
+  {
+    width: 100%;
+    height:90px;
+    padding-top: 80px;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/022/109/598/small_2x/green-banner-abstract-background-free-vector.jpg");
+    background-size: 100% 100%;
+  }
+
+  .filtrowanie
+  {
+    background-color: white;
+    padding: 10px;
+    padding-left:30px;
+    width:70%;
+    height:120px;
+    margin: auto;
+    box-shadow: 5px 5px 15px;
+    border-radius: 5px;
+    
+  }
+
+
+  .mieszkanie,.wynajem
+  {
+    width:150px;
+    height:30px;
+    position: relative;
+    font-family: Arial;
+    margin-right: 20px;
+  }
+
+  .miejscowosc
+  {
+    width:300px;
+    height:20px;
+    position: relative;
+    font-family: Arial;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  #miejscowosc
+  {
+    width:100%;
+    height: 100%;
+    background-color: #F0F0F0;
+    border:solid grey 1px;
+    box-shadow:  1px 1px 5px;
+    padding: 5px;
+    position: relative;
+    font-family: Arial;
+  }
+
+  #miejscowosc:hover
+  {
+    background-color: white;
+  }
+
+  select
+  {
+    background-color:#F0F0F0;
+    width:100%;
+    height: 100%;
+    border:solid #F0F0F0 1px;
+    box-shadow: 1px 1px 5px;
+  }
+
+  
+  #mieszkanie-selected {
+    background-color: DodgerBlue;
+  }
+
+  select:hover
+  {
+     background-color: white;
+  }
+
+  .wyszukaj
+  {
+    width:150px;
+    height:30px;
+    position: relative;
+    font-family: Arial;
+    font-size: 110%;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+    border:solid black 4px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px;
+    transition: 0.35s;
+  }
+  
+  .wyszukaj:hover
+  {
+    background-color: white;
+    color: black;
+    border:solid black 4px;
+    font-style: bold;
+  }
+
+  .glowny
+  {
+    height:2000px;
+    width:100%;
+    margin-top: 90px;
+  }
+
+  #logo
+  {
+    margin-left: 120px;
+    width:180px;
+    height: 95px;
+  }
+
+  .kontrolki
+  {
+    float:right;
+    height: 40px;
+    width: 1150px;
+    margin-top: 55px;
+    padding: 5px;
+  }
+
+  #pion
+  {
+    float:left;
+    border: 1px solid grey;
+    height: 25px;
+    width: 0px;
+    }
+
+  a
+  {
+    text-decoration: none;
+  }
+
+  .odnosnik
+  {
+    float:left;
+    height:30px;
+    width:200px;
+    font-size: 120%;
+    margin-right:10px;
+    margin-left: 10px;
+    padding-top:10px ;
+    text-align: center;
+    color:black;
+    transition: 0.35s;
+    border-radius: 10px;
+  }
+
+  .odnosnik:hover
+  {
+    background-color: #2a623d;
+    color:white;
+  }
+
+
+  .oferta
+  {
+    background-color: white;
+    margin:auto;
+    margin-top: 50px;
+    height:350px;
+    width:1000px;
+    box-shadow: 3px 3px 10px;
+  }
+
+  .lewy
+  {
+    float:left;
+    width:500px;
+    height: 350px;
+  }
+
+  .prawy
+  {
+    float:right;
+    width:460px;
+    padding: 20px;
+    height: 310px;
+  }
+
+  .foto_oferty
+  {
+    height:100%;
+    width:100%;
+  }
+
+  .cena
+  {
+    float:right;
+    font-size: 200%;
+    color:lightseagreen;
+  }
+
+  #icon
+  {
+    float: right;
+    margin-right: 10px;
+    width:30px;
+    height:30px;
+  }
+
+  #icon:hover
+  {
+      content: url("https://cdn-icons-png.flaticon.com/512/3756/3756511.png");
+  }
+
+  .napis
+  {
+    float:left;
+    font-size: 150%;
+    color:grey;
+  }
+
+  .miasto
+  {
+    float: left;
+    font-size: 200%;
+  }
+
+  .ulica
+  {
+    float: left;
+    font-size: 120%;
+  }
+
+  .parametry
+  {
+    float: left;
+    font-size: 110%;
+  }
+
+  .submit
+  {
+    float: right;
+    background-color: white;
+    border: none;
+  }
+  
